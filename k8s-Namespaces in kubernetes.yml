@@ -1,0 +1,55 @@
+apiVersion: batch/v1
+kind: CronJob
+metadata:
+  annotations: {}
+  labels: {}
+  name: cron-job-dd
+  namespace: namespace-nv
+---
+apiVersion: apps/v1
+kind: DaemonSet
+metadata:
+  annotations: {}
+  labels: {}
+  name: daemon-set-bo
+  namespace: namespace-nv
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations: {}
+  labels: {}
+  name: deployment-uw
+  namespace: namespace-nv
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  annotations: {}
+  labels: {}
+  name: job-ib
+  namespace: namespace-nv
+---
+apiVersion: v1
+kind: Namespace
+metadata:
+  annotations: {}
+  labels: {}
+  name: namespace-nv
+  namespace: default
+---
+apiVersion: v1
+kind: Pod
+metadata:
+  annotations: {}
+  labels: {}
+  name: pod-sd
+  namespace: namespace-nv
+---
+apiVersion: apps/v1
+kind: StatefulSet
+metadata:
+  annotations: {}
+  labels: {}
+  name: stateful-set-dj
+  namespace: namespace-nv
