@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  webserver:
+    image: nginx:latest
+    ports:
+      - "8080:80"
+
+  api:
+    image: alpine:latest
+    command: ["sleep", "3600"]
